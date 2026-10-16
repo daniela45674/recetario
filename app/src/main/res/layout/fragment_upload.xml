@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:padding="16dp">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:fontFamily="serif" android:text="SUBIR MI RECETA" android:textColor="#FFFFFF"
+            android:textSize="22sp" android:textStyle="bold"/>
+        <EditText android:id="@+id/et_name" android:layout_width="match_parent" android:layout_height="48dp"
+            android:layout_marginTop="12dp" android:background="@drawable/bg_input" android:hint="Nombre de la receta"
+            android:inputType="text" android:paddingHorizontal="16dp" android:textColor="#FFFFFF" android:textColorHint="#E6FFFFFF"/>
+        <EditText android:id="@+id/et_desc" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="8dp" android:background="@drawable/bg_input" android:hint="Descripción"
+            android:inputType="textMultiLine" android:minHeight="48dp" android:padding="12dp"
+            android:textColor="#FFFFFF" android:textColorHint="#E6FFFFFF"/>
+        <Spinner android:id="@+id/sp_category" android:layout_width="match_parent" android:layout_height="48dp"
+            android:layout_marginTop="8dp" android:background="@drawable/bg_input"/>
+        <EditText android:id="@+id/et_time" android:layout_width="match_parent" android:layout_height="48dp"
+            android:layout_marginTop="8dp" android:background="@drawable/bg_input" android:hint="Tiempo de preparación (min)"
+            android:inputType="number" android:paddingHorizontal="16dp" android:textColor="#FFFFFF" android:textColorHint="#E6FFFFFF"/>
+        <EditText android:id="@+id/et_servings" android:layout_width="match_parent" android:layout_height="48dp"
+            android:layout_marginTop="8dp" android:background="@drawable/bg_input" android:hint="Número de porciones"
+            android:inputType="number" android:paddingHorizontal="16dp" android:textColor="#FFFFFF" android:textColorHint="#E6FFFFFF"/>
+        <EditText android:id="@+id/et_ingredients" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="8dp" android:background="@drawable/bg_input"
+            android:hint="Ingredientes (uno por línea, ej: 500 g de carne)" android:inputType="textMultiLine"
+            android:minLines="4" android:gravity="top" android:padding="12dp"
+            android:textColor="#FFFFFF" android:textColorHint="#E6FFFFFF"/>
+        <EditText android:id="@+id/et_steps" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="8dp" android:background="@drawable/bg_input" android:hint="Pasos (uno por línea)"
+            android:inputType="textMultiLine" android:minLines="4" android:gravity="top" android:padding="12dp"
+            android:textColor="#FFFFFF" android:textColorHint="#E6FFFFFF"/>
+        <androidx.appcompat.widget.SwitchCompat android:id="@+id/sw_private" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="Receta privada"
+            android:textColor="#FFFFFF"/>
+        <Button android:id="@+id/btn_publish" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="12dp" android:background="@drawable/bg_button_red" android:text="PUBLICAR"
+            android:textColor="#FFFFFF"/>
+    </LinearLayout>
+</ScrollView>

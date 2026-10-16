@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:padding="16dp">
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:fontFamily="serif" android:text="FLAVOR LIBRARY" android:textColor="#FFFFFF"
+        android:textSize="22sp" android:textStyle="bold"/>
+    <EditText android:id="@+id/et_search" android:layout_width="match_parent" android:layout_height="48dp"
+        android:layout_marginTop="12dp" android:background="@drawable/bg_input" android:hint="Buscar receta..."
+        android:inputType="text" android:paddingStart="16dp" android:paddingEnd="16dp"
+        android:textColor="#FFFFFF" android:textColorHint="#E6FFFFFF" android:drawableEnd="@android:drawable/ic_menu_search"/>
+    <Button android:id="@+id/btn_upload" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_marginTop="8dp" android:background="@drawable/bg_button_red" android:text="Subir mi receta"
+        android:textColor="#FFFFFF" android:visibility="gone"/>
+    <TextView android:id="@+id/tv_empty" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_marginTop="24dp" android:gravity="center" android:text="No se encontraron recetas."
+        android:textColor="#FFFFFF" android:visibility="gone"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv_recipes"
+        android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"
+        android:layout_marginTop="12dp" android:clipToPadding="false"/>
+</LinearLayout>
