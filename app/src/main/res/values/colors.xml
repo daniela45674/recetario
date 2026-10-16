@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Colores personalizados para Flavor Library -->
+    <color name="orange_start">#FF7E5F</color>
+    <color name="orange_end">#FEB47B</color>
+    <color name="dark_red_card">#5C0606</color>
+    <color name="bio_btn_green">#4CAF50</color>
+</resources>
